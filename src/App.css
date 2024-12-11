@@ -1,0 +1,63 @@
+@media only screen 
+    and (max-width: 768px)  { 
+      #gone {
+        display: none;
+      }
+    }
+
+.nav {
+  position:absolute;
+    width: 60%;
+    height: 260px;
+    top: 0px;
+    right: 30%;
+    pointer-events: none;
+    border-radius: 120px 20px;
+    opacity: 0.24;
+    box-shadow: rgb(0 143 253) 20px 250px 300px;
+    transform: rotate(15deg) translateY(-175%) translateZ(0px);
+    transition: opacity 1.5s cubic-bezier(0.17, 0.17, 0, 1) 0s;
+}
+
+
+
+.center {
+  position: absolute;
+
+  left: 0;
+  right: 0px;
+  opacity: 0.25;
+  filter: blur(90px);
+  transform: translate(0, -10%)  translateZ(0px);
+  height: 15%;
+  width: 100%;
+  background-color: rgb(0, 143, 253);
+  border-radius: 75%;
+  pointer-events: none;
+}
+
+.contact {
+  position: absolute;
+
+  left: 0;
+  right: 0px;
+  opacity: 0.14;
+  filter: blur(90px);
+  transform: translate(20%, -10%)  translateZ(0px);
+  height: 35%;
+  width: 70%;
+  background-color: rgb(0, 143, 253);
+  border-radius: 75%;
+  pointer-events: none;
+}
+
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 7px;
+  background: #fff ;
+  transform-origin: 0%;
+}
