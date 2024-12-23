@@ -7,6 +7,7 @@ import Loader from "./components/Loader/Loader";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 import Certificate from "./components/Certificate";
+import Experiens from "./components/Experience";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
 import ReactGA from "react-ga";
@@ -44,6 +45,7 @@ function App() {
                   <Main sendData={sendData} />,
                   <About sendData={sendData} />,
                   <Skills />,
+                  <Experiens />,
                   <Certificate />,
                   <Portfolio />,
                   <Contact />,

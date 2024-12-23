@@ -62,7 +62,9 @@ function Certificate() {
     const [highlights, setHighlights] = useState(true);
 
     return (
-        <div className="text-gray-900 dark:text-white bg-[#F3F4F5] dark:bg-slate-900">
+        <div
+        name="certificates"
+        className="text-gray-900 dark:text-white bg-[#F3F4F5] dark:bg-slate-900">
             <div name="portfolio" className="md:h-2/3 container mx-auto">
                 <div className="p-4 mx-auto flex flex-col justify-center w-full h-full">
                     <div className="pb-8">

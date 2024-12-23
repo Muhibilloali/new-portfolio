@@ -1,6 +1,7 @@
 import React from 'react'
 import {FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { RiTelegramFill } from "react-icons/ri";
+import { FaWhatsapp } from "react-icons/fa";
 import {FiMail} from 'react-icons/fi';
 import { IoLogoInstagram } from "react-icons/io5";
 
@@ -30,6 +31,15 @@ const Footer = () => {
           aria-label="Twitter"
         >
           <RiTelegramFill />
+        </a>
+        <a
+          class="text-sky-600 hover:text-opacity-75 text-3xl"
+          href="https://wa.me/qr/RIG3ROJ6NRRQE1"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Twitter"
+        >
+          <FaWhatsapp />
         </a>
         <a
           class="text-blue-400	 hover:text-opacity-75 text-3xl"

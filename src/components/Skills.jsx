@@ -10,11 +10,11 @@ import bootstrap2 from "../assets/icons/bootstrap2.png";
 import firebase from "../assets/icons/firebase.png";
 import vite from "../assets/icons/vite.png";
 import html5 from "../assets/icons/html5.png";
-import chatgpt2 from "../assets/icons/chatgpt2.png";
 import materialUi from "../assets/icons/materialUi.png";
 import figma2 from "../assets/icons/figma2.png";
 import typescript from "../assets/icons/typescript.png";
 import photoshop from "../assets/icons/photoshop.png";
+import next from "../assets/icons/next-removebg-preview.png";
 import illustrator from "../assets/icons/illustrator.png";
 
 const Skills = () => {
@@ -30,6 +30,10 @@ const Skills = () => {
     {
       id: 2,
       src: reactImage,
+    },
+    {
+      id: 16,
+      src: next,
     },
     
     {
@@ -72,10 +76,6 @@ const Skills = () => {
     {
       id: 13,
       src: figma2,
-    },
-    {
-      id: 7,
-      src: chatgpt2,
     },
     {
       id: 7,

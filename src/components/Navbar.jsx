@@ -21,6 +21,10 @@ const Navbar = ({ setSendData }) => {
       link: "skills",
     },
     {
+      id: 7,
+      link: "experience",
+    },
+    {
       id: 5,
       link: "certificates",
     },

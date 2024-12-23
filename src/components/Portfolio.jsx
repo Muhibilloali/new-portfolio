@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { RoughNotation } from "react-rough-notation";
-// import unsplashProject from "../assets/projects/fullStack/Unsplash.png";
 import todolist from "../assets/projects/miniProjects/todolist.png";
-//import mealGenerator from "../assets/projects/miniProjects/MealGenerator.png";
-// import shadowUI from "../assets/projects/frontEnd/ShadowUI.png";
 import travelAgency from "../assets/projects/frontEnd/travel-agency.png";
 import calculator from "../assets/projects/frontEnd/calculator.png";
 import pokemon from "../assets/projects/fullStack/pokemon.png"
@@ -152,7 +149,9 @@ const Portfolio = () => {
   const [highlightsThird, setHighlightsThird] = useState(false);
 
   return (
-    <div className=" text-gray-900 dark:text-white  bg-[#F3F4F5] dark:bg-slate-900">
+    <div 
+    name="portfolio"
+    className=" text-gray-900 dark:text-white  bg-[#F3F4F5] dark:bg-slate-900">
       <div name="portfolio" className="md:h-2/3 container mx-auto">
         <div className="p-4 mx-auto flex flex-col justify-center w-full h-full">
           <div className="pb-8">

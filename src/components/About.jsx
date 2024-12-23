@@ -34,7 +34,7 @@ const About = ({ sendData }) => {
             show={true}
             color="#8ac926"
           >
-            Istanbul University
+            Sakarya University
           </RoughNotation>
           in the Istanbul province of Turkey, studying computer engineering.
           Currently, I am on academic vacation. I am also a graduate of the
@@ -82,11 +82,11 @@ const About = ({ sendData }) => {
             <RoughNotation
               type="highlight"
               animationDelay={1000}
-              padding={5}
+              padding={10}
               show={true}
               color="#8ac926"
             >
-              resume
+              Resume
             </RoughNotation>
           </a>{" "}
           in case you want to have a look.

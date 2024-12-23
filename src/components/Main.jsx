@@ -15,7 +15,7 @@ const Main = ({ sendData }) => {
           <p className=" lg:text-5xl xl:text-6xl sm:text-4xl text-4xl  font-extrabold tracking-wide  mb-6 leading-10 text-slate-900 dark:text-white">
             Hello! I'm{" "}
             <span class="bg-clip-text text-transparent   bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-500">
-              Muhibillo Abduqaxxorov
+              Muhibillo Abduqahhorov
             </span>
             , a Frontend Developer based in{" "}
             <RoughNotation
@@ -48,8 +48,8 @@ const Main = ({ sendData }) => {
               show={sendData}
               color="#8ac926"
             ></RoughNotation>{" "}
-            mostly using technologies like JavaScript, React, Typescript and
-            API(or Firebase)...
+            mostly using technologies like JavaScript, React, Next, Typescript,
+            API and Firebase ...
           </p>
           <div id="gone" class=" text-center">
             <div class="relative inline-flex mt-10 group ">

@@ -36,7 +36,9 @@ const Contact = () => {
   };
 
   return (
-<div className="dfsadf">
+<div 
+name="contact"
+className="dfsadf">
 
     <div className="flex items-center justify-center min-h-screen bg-gray-900 text-white">
       <div className="bg-gray-800 p-6 rounded-lg shadow-2xl drop-shadow-[0_4px_6px_rgba(255,255,255,255)] w-[90%] max-w-lg">
