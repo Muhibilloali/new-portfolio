@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { RoughNotation } from "react-rough-notation";
 import { FiGithub } from "react-icons/fi";
 import { HiOutlineExternalLink } from "react-icons/hi";
+import astrumcer from "../../src/assets/Certificate/astrumcer.jpg";
 import frontend from "../../src/assets/Certificate/frontend.png";
 import fullstack from "../assets/Certificate/fullstact.png"
 import software from "../../src/assets/Certificate/software.png";
@@ -11,10 +12,19 @@ function Certificate() {
     const certificates = [
         {
             id: 1,
+            src: astrumcer,
+            liveLink: "https://certificate.astrum.uz/?seria=FD&sertificate_id=0000191",
+            sourceCode: "",
+            title: "Astrum IT Academy in FRONTEND DEVELOPMENT",
+            description: `I have successfully completed the Frontend Developer program at Astrum IT Academy.`,
+            isHidden: "hidden",
+        },
+        {
+            id: 1,
             src: frontend,
             liveLink: "https://upskill.us.qwasar.io/certificates/MTI1Mi1hYmR1cWF4eF9tLW1heS0yMDIxLTIwLTQyZjM=",
             sourceCode: "",
-            title: "ADVANCED FRONTEND DEVELOPMENT",
+            title: "I am a graduate of the Frontend Developer program organized by Qwasar Silicon Valley.",
             description: `ADVANCED FRONTEND DEVELOPMENT
                           is awarded to
                           Muxibillo Abduqaxxorov
@@ -48,7 +58,7 @@ function Certificate() {
         {
             id: 4,
             src: tomer,
-            liveLink: "https://my-yelp-nuriddin.netlify.app/",
+            liveLink:"" ,
             sourceCode: "https://github.com/Muhibilloali",
             title: "Turkish Language B2 Certificate",
             description: `By participating in the Türkiye Turkish Proficiency Test held at our student center, the student whose identity is written above
@@ -69,15 +79,8 @@ function Certificate() {
                 <div className="p-4 mx-auto flex flex-col justify-center w-full h-full">
                     <div className="pb-8">
                         <p className="text-4xl font-extrabold text-slate-900 dark:text-white inline">
-                            <RoughNotation
-                                type="underline"
-                                animationDelay={1000}
-                                strokeWidth={5}
-                                show={true}
-                                color="#c8b6ff"
-                            >
-                                Certificates
-                            </RoughNotation>
+                            
+                            Certificates
                         </p>
                         <p className="pt-6 text-xl">See my famous certificate!</p>
                     </div>

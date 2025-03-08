@@ -9,6 +9,7 @@ import instagram from "../assets/projects/fullStack/instagram.png"
 import dropbox from "../assets/projects/fullStack/dropbox.png"
 import yelp from "../assets/projects/fullStack/yelp.png"
 import pomodoro from "../assets/projects/fullStack/pomodoro.png"
+import gulshan from "../assets/projects/frontEnd/gulshan.png"
 import { FiGithub } from "react-icons/fi";
 import { HiOutlineExternalLink } from "react-icons/hi";
 
@@ -18,10 +19,21 @@ const Portfolio = () => {
   const fullstack = [
     {
       id: 1,
+      src: gulshan,
+      liveLink: "https://gulshanchool.vercel.app/",
+      sourceCode: "",
+      title: "Gulshan School",
+      description:
+        `Gulshan School, I developed a modern, user-friendly website designed to streamline access to essential school information and enhance communication between educators, students, and parents. The project features a responsive design, interactive elements, and robust functionality to deliver a seamless user experience across all devices.`,
+      idx: ["ReactJsx", "Tailwind", "Vitejs", "Python", "Django"],
+      isHidden: "hidden",
+    },
+    {
+      id: 1,
       src: instagram,
       liveLink: "https://my-instagram-clone-chi.vercel.app/login",
       sourceCode: "",
-      title: "Instagram_Clone",
+      title: "Instagram Clone",
       description:
         `This is an Instagram_Clone project, where you can upload photos and videos after authorization, your friends can see them and comment on your posts, and you can chat with them.`,
       idx: ["ReactJsx", "Tailwind", "Firebse", "Vitejs"],
@@ -32,7 +44,7 @@ const Portfolio = () => {
       src: dropbox,
       liveLink: "https://my-dropbox.netlify.app/",
       sourceCode: "",
-      title: "My_Dropbox",
+      title: "My Dropbox",
       description:
         "The name of this project is 'My_Dropbox' where you will be able to store old files and pictures, you will need to register for this",
       idx: ["ReactJsx", "Tailwind", "Firebase", "ViteJs"],
@@ -43,7 +55,7 @@ const Portfolio = () => {
       src: pokemon,
       liveLink: "https://pokemon-muhibillo.netlify.app/",
       sourceCode: "https://github.com/Muhibilloali",
-      title: "My_Pokemon",
+      title: "My Pokemon",
       description:
         "This is a pokemon project where you can see pictures of pokemons you like and see their features.",
       idx: ["ReactJsx", "Tailwind", "Firebase", "ViteJs"],
@@ -54,7 +66,7 @@ const Portfolio = () => {
       src: yelp,
       liveLink: "https://my-yelp-nuriddin.netlify.app/",
       sourceCode: "https://github.com/Muhibilloali",
-      title: "My_Yelp",
+      title: "My Yelp",
       description:
         "Yelp is a popular platform where users can search for and review businesses, primarily restaurants and other local establishments. It allows users to rate and review businesses, as well as share their experiences with others.",
       idx: ["ReactJsx", "Tailwind", "Firebase", "ViteJs"],
@@ -156,15 +168,8 @@ const Portfolio = () => {
         <div className="p-4 mx-auto flex flex-col justify-center w-full h-full">
           <div className="pb-8">
             <p className="text-4xl font-extrabold text-slate-900 dark:text-white inline">
-              <RoughNotation
-                type="underline"
-                animationDelay={1000}
-                strokeWidth={5}
-                show={true}
-                color="#c8b6ff"
-              >
-                Portfolio
-              </RoughNotation>
+              
+              Portfolio
             </p>
             <p className="pt-6 text-xl">Check out some of my featured work! </p>
           </div>

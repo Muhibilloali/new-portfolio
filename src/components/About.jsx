@@ -34,7 +34,7 @@ const About = ({ sendData }) => {
             show={true}
             color="#8ac926"
           >
-            Sakarya University
+            Istanbul University
           </RoughNotation>
           in the Istanbul province of Turkey, studying computer engineering.
           Currently, I am on academic vacation. I am also a graduate of the
@@ -74,7 +74,7 @@ const About = ({ sendData }) => {
           Here is my{" "}
           <a
             className="dark:text-black mx-2"
-            href="/resume.pdf"
+            href="/muhibillo-resume.pdf"
             target="_blank"
             rel="noreferrer"
           >

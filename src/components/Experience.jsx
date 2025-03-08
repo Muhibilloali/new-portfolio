@@ -4,9 +4,18 @@ import { FiGithub } from "react-icons/fi";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import astrum from "../../src/assets/Certificate/astrum.jpg";
 import astrumStaff from "../assets/Certificate/astrum_staff.jpg";
+import freelanser from "../assets/Certificate/freelanser.jpeg";
 
 function Certificate() {
   const certificates = [
+    {
+      id: 3,
+      src: freelanser,
+      sourceCode: "",
+      title: "Upwork, Freelancer 2 years",
+      description: `I thrive as an independent freelancer, harnessing platforms like Upwork and other reputable freelancing sites to deliver exceptional work and creative solutions tailored to my clients’ needs.`,
+      isHidden: "hidden",
+    },
     {
       id: 1,
       src: astrumStaff,
@@ -30,15 +39,17 @@ interfaces, enhancing user experience, and
 implementing responsive designs.`,
       isHidden: "hidden",
     },
+    
   ];
 
   const [openTab, setOpenTab] = useState(1);
   const [highlights, setHighlights] = useState(true);
 
   return (
-    <div 
-    name="experience"
-    className="text-gray-900 dark:text-white bg-[#F3F4F5] dark:bg-slate-900">
+    <div
+      name="experience"
+      className="text-gray-900 dark:text-white bg-[#F3F4F5] dark:bg-slate-900"
+    >
       <div name="portfolio" className="md:h-2/3 container mx-auto">
         <div className="p-4 mx-auto flex flex-col justify-center w-full h-full">
           <div className="pb-8">
@@ -51,10 +62,8 @@ implementing responsive designs.`,
                 color="#c8b6ff"
               >
                 Experience
-                
               </RoughNotation>
             </p>
-            
           </div>
         </div>
 
