@@ -4,7 +4,7 @@ import ".././App.css";
 const About = ({ sendData }) => {
   return (
     <div
-      name="about"
+      name="hakkımda"
       className="  text-slate-900 dark:text-slate-300  bg-[#F3F4F5] dark:bg-slate-900"
     >
       <div className="p-4 container mx-auto flex flex-col justify-center w-full h-full">
@@ -16,65 +16,58 @@ const About = ({ sendData }) => {
             show={sendData}
             color="#457b9d"
           >
-            About
+            Hakkımda
           </RoughNotation>
         </p>
 
         <p className="text-xl mt-10">
-          Hello, my name is
-          <span class="bg-clip-text text-transparent mx-0.5  bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-500">
-            Muhibillo
+          Selam! Ben
+          <span class="bg-clip-text text-transparent mx-0.5  bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-500 p-2">
+            Muhibillo Ali 
           </span>
-          , and I am 24 years old. I am a third-year student at
-          <RoughNotation
-            className="dark:text-black mx-2"
-            type="highlight"
-            animationDelay={1000}
-            padding={5}
-            show={true}
-            color="#8ac926"
-          >
-            Istanbul University
-          </RoughNotation>
-          in the Istanbul province of Turkey, studying computer engineering.
-          Currently, I am on academic vacation. I am also a graduate of the
-          Frontend Developer specialization at
-          <RoughNotation
-            className="dark:text-black mx-2"
-            type="highlight"
-            animationDelay={1000}
-            padding={5}
-            show={true}
-            color="#8ac926"
-          >
+           25 yaşındayım ve şu anda İstanbul’da yaşıyorum.
+          <span class="bg-clip-text text-transparent mx-0.5 p-2  bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-500">
+            Sakarya Üniversitesi
+          </span>
+          Bilgisayar Mühendisliği 3. sınıf öğrencisiyim, şu anda akademik izin
+          sürecindeyim. Aynı zamanda{" "}
+          <span class="bg-clip-text text-transparent mx-0.5  bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-500">
             Astrum IT Academy.
-          </RoughNotation>
-          I have a Turkish C1 language certificate at the level, and I am proficient in English (B1),  Russian (A2) and Japanese (N4). I currently live in Tashkent.{" "}
-        </p>
-
-        <p className="text-xl mt-10">
-          My passion for web development started back in 2022 when I decided to
-          try editing a Shopify theme — turns out hacking together a simple add
-          to cart button taught me a lot about HTML & CSS! I’ve always been
-          curious about technology and how things work. Figuring things out is
-          what inspired me to learn how to code.
-          I like bringing new ideas to life so I code the front-end. In
-          particular, I enjoy the sense of pride and accomplishment when
-          combining everything into a complete project.
-        </p>
-
-        <br />
-
-        <p className="text-xl">
+          </span>{" "}
+          ’de Frontend Developer eğitimi alarak bu alanda uzmanlaştım. Web
+          geliştirme serüvenim 2022 yılında, Shopify temasını düzenlemeye
+          çalışırken başladı. Küçük bir "sepete ekle" butonu oluşturmam, bana
+          HTML ve CSS hakkında düşündüğümden çok daha fazlasını öğretti! O
+          günden beri teknolojiye olan merakım ve bir şeylerin nasıl çalıştığını
+          anlama isteğim beni bu yolda motive etmeye devam ediyor. Frontend
+          geliştirmeyi seviyorum çünkü fikirlerin gerçeğe dönüştüğünü görmek
+          beni mutlu ediyor. Tasarım, kullanıcı deneyimi ve işlevselliği bir
+          araya getirip çalışır bir proje ortaya çıkardığımda gerçekten gurur
+          duyuyorum.
           
+          <span class="bg-clip-text text-transparent mx-0.5 pl-2 bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-500">
+          İngilizce (B1)
+          </span>{" "},
+          <span class="bg-clip-text text-transparent mx-0.5  bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-500">
+          Rusça (A2)
+          </span>{" "}
+ve
+          <span class="bg-clip-text text-transparent mx-0.5 pl-2 bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-500">
+          Japonca (N4)
+          </span>{" "}
+              bilgim var.
+          Sürekli öğrenmeye ve kendimi geliştirmeye açık biriyim. Yeni
+          teknolojilerle çalışmak, ekip içinde fikir alışverişi yapmak ve ortaya
+          güzel işler koymak benim için çok keyifli.
         </p>
 
+       
         <br />
         <p className="text-xl ">
-          Here is my{" "}
+        Göz atmak isterseniz, işte {" "}
           <a
-            className="dark:text-black mx-2"
-            href="/muhibillo-resume.pdf"
+            className="dark:text-black mx-2 "
+            href="/alicv.pdf"
             target="_blank"
             rel="noreferrer"
           >
@@ -82,14 +75,14 @@ const About = ({ sendData }) => {
             <RoughNotation
               type="highlight"
               animationDelay={1000}
-              padding={10}
+              padding={20}
               show={true}
               color="#8ac926"
             >
-              Resume
+              özgeçmişim
             </RoughNotation>
           </a>{" "}
-          in case you want to have a look.
+          
         </p>
       </div>
     </div>

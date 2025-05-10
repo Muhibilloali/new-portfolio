@@ -19,12 +19,13 @@ import illustrator from "../assets/icons/illustrator.png";
 
 const Skills = () => {
   const skills = [
+    
     {
-      id: 1,
+      id: 3,
       src: javascript,
     },
     {
-      id: 14,
+      id: 4,
       src: typescript,
     },
     {
@@ -36,14 +37,7 @@ const Skills = () => {
       src: next,
     },
     
-    {
-      id: 3,
-      src: html5,
-    },
-    {
-      id: 4,
-      src: css3,
-    },
+   
     {
       id: 10,
       src: bootstrap2,
@@ -90,7 +84,7 @@ const Skills = () => {
 
   return (
     <div
-      name="skills"
+      name="beceriler"
       className="pb-12 text-gray-900 dark:text-white bg-[#F3F4F5] dark:bg-slate-900"
     >
       <div className="p-4 text-black dark:text-white container mx-auto">
@@ -103,12 +97,12 @@ const Skills = () => {
               show={true}
               color="#457b9d"
             >
-              Skills
-            </RoughNotation>
+              Beceriler
+                  </RoughNotation>
           </p>
           <p className="py-6 text-xl">
-            These are the technologies I've worked with and learning something
-            new every other day!
+
+          Şimdiye kadar çalıştığım teknolojiler bunlar ve her geçen gün yeni bir şey öğrenmeye devam ediyorum!
           </p>
         </div>
       </div>

@@ -12,31 +12,24 @@ function Certificate() {
       id: 3,
       src: freelanser,
       sourceCode: "",
-      title: "Upwork, Freelancer 2 years",
-      description: `I thrive as an independent freelancer, harnessing platforms like Upwork and other reputable freelancing sites to deliver exceptional work and creative solutions tailored to my clients’ needs.`,
+      title: "Upwork, Freelancer – 2 yıl",
+      description: `Bağımsız bir freelancer olarak, Upwork ve diğer güvenilir freelance platformları aracılığıyla müşterilerimin ihtiyaçlarına özel yaratıcı çözümler ve kaliteli işler sunuyorum.`,
       isHidden: "hidden",
     },
     {
       id: 1,
       src: astrumStaff,
       sourceCode: "",
-      title: "Frontend Mentor at Astrum IT Academy 2024 - 5 mounth",
-      description: `As a mentor, I have guided others in their
-personal and professional development,
-helping them unlock their potential.This
-experience has been rewarding and has
-contributed to my own growth.`,
+      title: "Astrum IT Academy’de Frontend Mentor – 2024 (5 ay)",
+      description: `Bir mentor olarak, başkalarının kişisel ve profesyonel gelişimlerine rehberlik ettim ve onların potansiyellerini ortaya çıkarmalarına yardımcı oldum. Bu deneyim benim için hem öğretici hem de kişisel gelişimime katkı sağlayıcı oldu.`,
       isHidden: "hidden",
     },
     {
       id: 2,
       src: astrum,
       sourceCode: "",
-      title: "Frontend Developer at Astra Devs 2024-2025",
-      description: `As a Frontend Developer at Astra Devs, I
-contributed to building user-friendly web
-interfaces, enhancing user experience, and
-implementing responsive designs.`,
+      title: "Astra Devs’te Frontend Developer – 2024-2025",
+      description: `Astra Devs’te Frontend Developer olarak, kullanıcı dostu web arayüzleri geliştirdim, kullanıcı deneyimini iyileştirdim ve mobil uyumlu (responsive) tasarımlar uyguladım.`,
       isHidden: "hidden",
     },
     
@@ -47,7 +40,7 @@ implementing responsive designs.`,
 
   return (
     <div
-      name="experience"
+      name="deneyim"
       className="text-gray-900 dark:text-white bg-[#F3F4F5] dark:bg-slate-900"
     >
       <div name="portfolio" className="md:h-2/3 container mx-auto">
@@ -61,7 +54,7 @@ implementing responsive designs.`,
                 show={true}
                 color="#c8b6ff"
               >
-                Experience
+                Deneyim
               </RoughNotation>
             </p>
           </div>

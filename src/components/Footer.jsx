@@ -74,7 +74,7 @@ const Footer = () => {
       </div>
 
 
-<p class="text-lg font-medium"> Made with  by <span className='  bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-500 text-lg'>Muhibillo Abduqaxxorov</span> &copy; {new Date().getFullYear()}</p>
+<p class="text-lg font-medium"> © {new Date().getFullYear()} <span className='  bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-500 text-lg'> Ali Vefa </span>  Tüm hakları saklıdır</p>
     </div>
   </div>
 </footer>

@@ -73,16 +73,16 @@ function Certificate() {
 
     return (
         <div
-        name="certificates"
+        name="sertifikalar"
         className="text-gray-900 dark:text-white bg-[#F3F4F5] dark:bg-slate-900">
             <div name="portfolio" className="md:h-2/3 container mx-auto">
                 <div className="p-4 mx-auto flex flex-col justify-center w-full h-full">
                     <div className="pb-8">
                         <p className="text-4xl font-extrabold text-slate-900 dark:text-white inline">
                             
-                            Certificates
+                        Sertifikalar
                         </p>
-                        <p className="pt-6 text-xl">See my famous certificate!</p>
+                        <p className="pt-6 text-xl">Ünlü sertifikamı gör!</p>
                     </div>
                 </div>
 

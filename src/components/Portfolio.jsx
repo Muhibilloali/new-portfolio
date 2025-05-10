@@ -1,31 +1,65 @@
 import React, { useState } from "react";
 import { RoughNotation } from "react-rough-notation";
+import aslilogo from "../assets/projects/fullStack/aslilogo.png";
+import booklogo from "../assets/projects/fullStack/booklogo.png";
 import todolist from "../assets/projects/miniProjects/todolist.png";
 import travelAgency from "../assets/projects/frontEnd/travel-agency.png";
 import calculator from "../assets/projects/frontEnd/calculator.png";
-import pokemon from "../assets/projects/fullStack/pokemon.png"
+import pokemon from "../assets/projects/fullStack/pokemon.png";
 import pizza from "../assets/projects/frontEnd/pizza.png";
-import instagram from "../assets/projects/fullStack/instagram.png"
-import dropbox from "../assets/projects/fullStack/dropbox.png"
-import yelp from "../assets/projects/fullStack/yelp.png"
-import pomodoro from "../assets/projects/fullStack/pomodoro.png"
-import gulshan from "../assets/projects/frontEnd/gulshan.png"
+import instagram from "../assets/projects/fullStack/instagram.png";
+import dropbox from "../assets/projects/fullStack/dropbox.png";
+import yelp from "../assets/projects/fullStack/yelp.png";
+import pomodoro from "../assets/projects/fullStack/pomodoro.png";
+import gulshan from "../assets/projects/frontEnd/gulshan.png";
 import { FiGithub } from "react-icons/fi";
 import { HiOutlineExternalLink } from "react-icons/hi";
-
 
 const Portfolio = () => {
   //FullStack Projects
   const fullstack = [
+    {
+      id: 4,
+      src: booklogo,
+      liveLink: "https:book.uz",
+      sourceCode: "https://github.com/Muhibilloali",
+      title: "Online Kitap Mağazası Book.uz",
+      description:
+        "Bu proje, kullanıcıların diledikleri kitapları çevrim içi olarak inceleyip satın alabilecekleri modern bir web uygulamasıdır. Kullanıcı dostu arayüz, ödeme sistemi entegrasyonu ve mobil uyumlu tasarımıyla kolay ve keyifli bir alışveriş deneyimi sunar.",
+      idx: [
+        "Frontend -> NextJs , Tailwind Plus",
+        "Backend API -> Python, Django",
+      ],
+      isHidden: "hidden",
+    },
+    {
+      id: 4,
+      src: aslilogo,
+      liveLink: "https://asliborekmenu.vercel.app/",
+      sourceCode: "https://github.com/Muhibilloali",
+      title: "Aslı Börek – QR Kodlu Online Menü",
+      description:
+        "İstanbul’da yer alan Aslı Börek kafesi için geliştirilen bu proje sayesinde müşteriler QR kodu okutarak menüye kolayca erişebilir, ürünleri inceleyebilir ve mobil cihazları üzerinden sipariş verebilirler. Menü tasarımı tamamen mobil ve tablet uyumlu olarak hazırlanmıştır.",
+      idx: [
+        "Frontend -> ReactJsx , Tailwind Plus, Vitejs",
+        "Backend API -> Python, Django",
+      ],
+      isHidden: "hidden",
+    },
+
     {
       id: 1,
       src: gulshan,
       liveLink: "https://gulshanchool.vercel.app/",
       sourceCode: "",
       title: "Gulshan School",
-      description:
-        `Gulshan School, I developed a modern, user-friendly website designed to streamline access to essential school information and enhance communication between educators, students, and parents. The project features a responsive design, interactive elements, and robust functionality to deliver a seamless user experience across all devices.`,
-      idx: ["ReactJsx", "Tailwind", "Vitejs", "Python", "Django"],
+      description: `Gulshan School projesinde, okul bilgilerine kolay erişimi sağlamak ve öğretmenler, öğrenciler ile veliler arasındaki iletişimi güçlendirmek amacıyla modern ve kullanıcı dostu bir web sitesi geliştirdim. Proje; mobil uyumlu tasarımı, etkileşimli bileşenleri ve güçlü işlevselliğiyle tüm cihazlarda kesintisiz bir kullanıcı deneyimi sunuyor.
+
+`,
+      idx: [
+        "Frontend -> ReactJsx , Tailwind, Vitejs",
+        "Backend API -> Python, Django",
+      ],
       isHidden: "hidden",
     },
     {
@@ -34,9 +68,11 @@ const Portfolio = () => {
       liveLink: "https://my-instagram-clone-chi.vercel.app/login",
       sourceCode: "",
       title: "Instagram Clone",
-      description:
-        `This is an Instagram_Clone project, where you can upload photos and videos after authorization, your friends can see them and comment on your posts, and you can chat with them.`,
-      idx: ["ReactJsx", "Tailwind", "Firebse", "Vitejs"],
+      description: `Bu proje bir Instagram klonudur. Giriş yaptıktan sonra fotoğraf ve videolar yükleyebilirsiniz. Arkadaşlarınız bu gönderilerinizi görebilir, yorum yapabilir ve sizinle sohbet edebilir.`,
+      idx: [
+        "Frontend -> ReactJsx , Tailwind, Vitejs",
+        "Backend API -> Firebase",
+      ],
       isHidden: "hidden",
     },
     {
@@ -46,8 +82,11 @@ const Portfolio = () => {
       sourceCode: "",
       title: "My Dropbox",
       description:
-        "The name of this project is 'My_Dropbox' where you will be able to store old files and pictures, you will need to register for this",
-      idx: ["ReactJsx", "Tailwind", "Firebase", "ViteJs"],
+        "Bu projenin adı My_Dropbox. Bu platformda eski dosya ve resimlerinizi saklayabilirsiniz. Kayıt olmanız gerekmektedir.",
+      idx: [
+        "Frontend -> ReactJsx , Tailwind, Vitejs",
+        "Backend API -> Firebase",
+      ],
       isHidden: "hidden",
     },
     {
@@ -57,29 +96,8 @@ const Portfolio = () => {
       sourceCode: "https://github.com/Muhibilloali",
       title: "My Pokemon",
       description:
-        "This is a pokemon project where you can see pictures of pokemons you like and see their features.",
+        "Bu, sevdiğiniz Pokemon’ların resimlerini görebileceğiniz ve onların özelliklerini inceleyebileceğiniz bir Pokemon projesidir.",
       idx: ["ReactJsx", "Tailwind", "Firebase", "ViteJs"],
-      isHidden: "hidden",
-    },
-    {
-      id: 4,
-      src: yelp,
-      liveLink: "https://my-yelp-nuriddin.netlify.app/",
-      sourceCode: "https://github.com/Muhibilloali",
-      title: "My Yelp",
-      description:
-        "Yelp is a popular platform where users can search for and review businesses, primarily restaurants and other local establishments. It allows users to rate and review businesses, as well as share their experiences with others.",
-      idx: ["ReactJsx", "Tailwind", "Firebase", "ViteJs"],
-      isHidden: "hidden",
-    },
-    {
-      id: 5,
-      src: pomodoro,
-      liveLink: "https://pomodoro-clone-eta.vercel.app/",
-      sourceCode: "https://github.com/Muhibilloali",
-      title: "Pomodoro Timer",
-      description: "Pomofocus is a customizable pomodoro timer that works on desktop & mobile browser. The aim of this app is to help you focus on any task you are working on, such as study, writing, or coding. This app is inspired by Pomodoro Technique which is a time management method developed by Francesco Cirillo.",
-      idx: ["ReactJsx", "Tailwind", "API", "ViteJs"],
       isHidden: "hidden",
     },
   ];
@@ -113,11 +131,11 @@ const Portfolio = () => {
       liveLink: "https://my-calculator-muhibillo.netlify.app/",
       sourceCode: "https://github.com/Muhibilloali",
       title: "My_Calculator",
-      description: "You can perform all mathematical operations (+, -, *, /, %) and other tasks on this website. Visit my GitHub profile to see this site.",
+      description:
+        "You can perform all mathematical operations (+, -, *, /, %) and other tasks on this website. Visit my GitHub profile to see this site.",
       idx: ["React", "Tailwind"],
       isHidden: "",
     },
-
   ];
   const miniProjects = [
     {
@@ -137,8 +155,7 @@ const Portfolio = () => {
       liveLink: "https://my-instagram-clone-chi.vercel.app/login",
       sourceCode: "https://github.com/Muhibilloali",
       title: "Instagram_Clone",
-      description:
-        `This is an Instagram_Clone project, where you can upload photos and videos after authorization, your friends can see them and comment on your posts, and you can chat with them!`,
+      description: `This is an Instagram_Clone project, where you can upload photos and videos after authorization, your friends can see them and comment on your posts, and you can chat with them!`,
       idx: ["ReactJsx", "Tailwind", "Firebse", "ViteJs"],
       isHidden: "hidden",
     },
@@ -148,11 +165,11 @@ const Portfolio = () => {
       liveLink: "https://pomodoro-clone-eta.vercel.app/",
       sourceCode: "https://github.com/Muhibilloali",
       title: "Pomodoro Timer",
-      description: "Pomofocus is a customizable pomodoro timer that works on desktop & mobile browser. The aim of this app is to help you focus on any task you are working on, such as study, writing, or coding. This app is inspired by Pomodoro Technique which is a time management method developed by Francesco Cirillo.",
+      description:
+        "Pomofocus is a customizable pomodoro timer that works on desktop & mobile browser. The aim of this app is to help you focus on any task you are working on, such as study, writing, or coding. This app is inspired by Pomodoro Technique which is a time management method developed by Francesco Cirillo.",
       idx: ["ReactJsx", "Tailwind", "API", "ViteJs"],
       isHidden: "hidden",
     },
-
   ];
 
   const [openTab, setOpenTab] = useState(1);
@@ -161,17 +178,17 @@ const Portfolio = () => {
   const [highlightsThird, setHighlightsThird] = useState(false);
 
   return (
-    <div 
-    name="portfolio"
-    className=" text-gray-900 dark:text-white  bg-[#F3F4F5] dark:bg-slate-900">
+    <div
+      name="portfolio"
+      className=" text-gray-900 dark:text-white  bg-[#F3F4F5] dark:bg-slate-900"
+    >
       <div name="portfolio" className="md:h-2/3 container mx-auto">
         <div className="p-4 mx-auto flex flex-col justify-center w-full h-full">
           <div className="pb-8">
             <p className="text-4xl font-extrabold text-slate-900 dark:text-white inline">
-              
               Portfolio
             </p>
-            <p className="pt-6 text-xl">Check out some of my featured work! </p>
+            <p className="pt-6 text-xl">İşte öne çıkan bazı çalışmalarım!</p>
           </div>
         </div>
 
@@ -286,7 +303,7 @@ const Portfolio = () => {
                           <div class="grid grid-cols-1 overflow-hidden border border-gray-300 dark:border-slate-600 rounded-lg group sm:grid-cols-3">
                             <div class="relative">
                               <img
-                                class="absolute inset-0 object-cover w-full h-full"
+                                class="absolute inset-0 object-auto w-full h-full"
                                 src={src}
                                 alt=""
                               />
@@ -298,7 +315,10 @@ const Portfolio = () => {
                                 <div className="flex justify-between lg:justify-start gap-2">
                                   <a
                                     href={sourceCode}
-                                    className={"rounded-xl p-2 text-gray-900 dark:text-white  bg-[#ECEFF2] dark:bg-[#3B3A51] hover:opacity-80 " +  (isHidden)}
+                                    className={
+                                      "rounded-xl p-2 text-gray-900 dark:text-white  bg-[#ECEFF2] dark:bg-[#3B3A51] hover:opacity-80 " +
+                                      isHidden
+                                    }
                                     target="_blank"
                                     rel="noreferrer"
                                   >
@@ -372,7 +392,10 @@ const Portfolio = () => {
                                 <div className="flex justify-between lg:justify-start gap-2">
                                   <a
                                     href={sourceCode}
-                                    className={"rounded-xl p-2 text-gray-900 dark:text-white  bg-[#ECEFF2] dark:bg-[#3B3A51] hover:opacity-80 " +  (isHidden)}
+                                    className={
+                                      "rounded-xl p-2 text-gray-900 dark:text-white  bg-[#ECEFF2] dark:bg-[#3B3A51] hover:opacity-80 " +
+                                      isHidden
+                                    }
                                     target="_blank"
                                     rel="noreferrer"
                                   >

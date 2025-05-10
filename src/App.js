@@ -37,10 +37,10 @@ function App() {
           path="/"
           element={[
             <div className="antialiased  min-h-screen tracking-wide bg-[#F3F4F5] dark:bg-slate-900">
-              {loading ? (
+              {/* {loading ? (
                 <Loader />
               ) : (
-                [
+                [ */}
                   <Navbar setSendData={setSendData} />,
                   <Main sendData={sendData} />,
                   <About sendData={sendData} />,
@@ -50,8 +50,8 @@ function App() {
                   <Portfolio />,
                   <Contact />,
                   <Footer />,
-                ]
-              )}
+                {/* ]
+              )} */}
             </div>,
           ]}
         />

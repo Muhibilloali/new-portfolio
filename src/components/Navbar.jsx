@@ -1,5 +1,6 @@
 import React from "react";
 import ".././App.css";
+import alilogo from "../assets/icons/alilogo3.png";
 import { BiMenuAltRight } from "react-icons/bi";
 import { FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
@@ -9,53 +10,44 @@ import Switcher from "./Switcher";
 const Navbar = ({ setSendData }) => {
   const links = [
     {
-      id: 1,
-      link: "home",
-    },
-    {
       id: 2,
-      link: "about",
+      link: "hakkımda",
     },
     {
       id: 3,
-      link: "skills",
+      link: "beceriler",
     },
     {
       id: 7,
-      link: "experience",
+      link: "deneyim",
     },
     {
       id: 5,
-      link: "certificates",
+      link: "sertifikalar",
     },
-    {
-      id: 4,
-      link: "portfolio",
-    },
+
     {
       id: 6,
-      link: "contact",
+      link: "iletişim",
     },
   ];
 
   const [nav, setNav] = useState(false);
   return (
-    <div className=" ">
+    <div className="">
       <div className="nav"></div>
       <header className="container mx-auto">
         <div className="flex justify-between items-center px-4 py-4">
           <div className="">
             <div class="relative inline-flex group ">
-              <div class="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r dark:from-blue-400 dark:to-indigo-500  blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+              <div class=""></div>
 
-              <a
-                class={
-                  "relative inline-flex items-center justify-center px-4 py-2 text-3xl  font-extrabold text-white transition-all duration-200 bg-gray-900 dark:bg-white dark:text-gray-900 font-pj  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:opacity-90"
-                }
-                target="_blank"
-                href="/"
-              >
-                M
+              <a target="_blank" href="/">
+                <img
+                  className="relative w-32 h-32 inline-flex items-center justify-center text-white px-4 py-2 "
+                  src={alilogo}
+                  alt=""
+                />
               </a>
             </div>
           </div>

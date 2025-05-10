@@ -9,7 +9,7 @@ const Contact = () => {
 
   const handleSend = async () => {
     if (!message.trim()) {
-      alert("Message field cannot be empty.");
+      alert("Mesaj alanı boş bırakılamaz.");
       return;
     }
 
@@ -26,19 +26,19 @@ const Contact = () => {
           telegramMessage
         )}`
       );
-      setSuccessMessage("Your message has been sent successfully!");
+      setSuccessMessage("Mesajınız başarıyla gönderildi!");
       setMessage("");
       setEmail("");
       setCharCount(0);
     } catch (error) {
-      alert("Failed to send message. Please try again later.");
+      alert("Mesaj gönderilemedi. Lütfen daha sonra tekrar deneyin.");
     }
   };
 
   return (
 <div 
-name="contact"
-className="dfsadf">
+name="iletişim"
+className="dfsadf ">
 
     <div className="flex items-center justify-center min-h-screen bg-gray-900 text-white">
       <div className="bg-gray-800 p-6 rounded-lg shadow-2xl drop-shadow-[0_4px_6px_rgba(255,255,255,255)] w-[90%] max-w-lg">
@@ -49,16 +49,16 @@ className="dfsadf">
             className="rounded-full w-12 h-12 mr-4"
           />
           <div>
-            <h2 className="text-xl font-bold">Muhibillo_ali</h2>
+            <h2 className="text-xl font-bold">Ali Vefa</h2>
             <p className="text-sm text-gray-400">
-              Hey, thanks for visiting! Feel free to send me a message.
+            Merhaba, ziyaret ettiğiniz için teşekkürler! Bana dilediğiniz zaman mesaj gönderebilirsiniz.
             </p>
           </div>
         </div>
 
         <textarea
           className="w-full p-3 rounded-lg bg-gray-700 text-white mb-4 resize-none"
-          placeholder="Write a message..."
+          placeholder="Bir mesaj yazın..."
           value={message}
           maxLength={1000}
           onChange={(e) => {
@@ -68,13 +68,13 @@ className="dfsadf">
         ></textarea>
 
         <p className="text-sm text-gray-500 mb-4">
-          {charCount} / 1000 characters
+          {charCount} / 1000 karakter
         </p>
 
         <input
           type="email"
           className="w-full p-3 rounded-lg bg-gray-700 text-white mb-4"
-          placeholder="optional@email.com (if you'd like a response)"
+          placeholder="Telefon numarası ya da e-posta adresi giriniz."
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
@@ -83,7 +83,7 @@ className="dfsadf">
           className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg w-full"
           onClick={handleSend}
         >
-          Send
+          Gönder
         </button>
 
         {successMessage && (
